@@ -29,7 +29,6 @@ main {
 }
 
 .big-row {
-    background-color: blue;
     height: 385px;
     display: flex;
     justify-content: center;
@@ -47,6 +46,19 @@ main {
     width: 291px;
     height: 354px;
     margin: 31px 6px 0px 6px;
+    border-bottom-right-radius: 25px;
+}
+
+.big-col:first-child {
+    background-image: url("images/1908364606615453350.JPG");
+}
+
+.big-col:nth-child(2) {
+    background-image: url("images/Picture-046410251500.jpg");
+}
+
+.big-col:last-child {
+    background-image: url("images/פזקר_-291_354410564000.jpg");
 }
 
 .small-col {
