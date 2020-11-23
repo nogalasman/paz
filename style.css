@@ -5,6 +5,8 @@ body {
     margin: 0;
     direction: rtl;
     text-align: right;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
 }
 
 header {
@@ -71,8 +73,39 @@ main {
 .txt-container {
     width: 246px;
     height: 95px;
-    background-color: rgba(144, 144, 144, 0.9);
+    background-color: rgba(123, 121, 119, 0.95);
     margin-top: 253px;
     border-bottom-right-radius: 25px;
     margin-right: 6px;
+    color: white;
+    line-height: 1.1;
+}
+
+.txt-container h3 {
+    /* padding-top: 10px;
+    padding-bottom: 0; */
+    /* margin: 0px 10px 5px 5px; */
+    padding: 0;
+    margin: 0;
+    padding: 4px 10px 0 10px;
+}
+
+.txt-container p {
+    /* margin: 5px; */
+    padding: 0;
+    margin: 0;
+    padding: 3px 10px 0 10px;
+}
+
+.txt-container a {
+    float: left;
+    margin-left: 10px;
+    padding-left: 12px;
+    color: white;
+    background: url("images/read_more_white.png") left center no-repeat;
+}
+
+.txt-container a:hover {
+    color: #005CA0;
+    background: url("images/read_more_blue.png") left center no-repeat;
 }
