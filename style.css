@@ -37,14 +37,12 @@ main {
 }
 
 .small-row {
-    background-color: green;
     height: 234px;
     display: flex;
     justify-content: center;
 }
 
 .big-col {
-    background-color: red;
     width: 291px;
     height: 354px;
     margin: 31px 6px 0px 6px;
@@ -63,17 +61,10 @@ main {
     background-image: url("images/פזקר_-291_354410564000.jpg");
 }
 
-.small-col {
-    background-color: black;
-    width: 291px;
-    height: 215px;
-    margin: 19px 6px 0px 6px;
-}
-
 .txt-container {
     width: 246px;
     height: 95px;
-    background-color: rgba(123, 121, 119, 0.95);
+    background-color: rgba(123, 121, 119, 0.9);
     margin-top: 253px;
     border-bottom-right-radius: 25px;
     margin-right: 6px;
@@ -106,6 +97,59 @@ main {
 }
 
 .txt-container a:hover {
+    color: #005CA0;
+    background: url("images/read_more_blue.png") left center no-repeat;
+}
+
+.small-col {
+    width: 291px;
+    height: 215px;
+    margin: 19px 6px 0px 6px;
+    background: url("images/small_cube_bg.png") no-repeat top center;
+    text-align: center;
+}
+
+.small-col h3 {
+    color: #575757;
+    margin-top: 8px;
+    margin-right: 22px;
+    text-align: right;
+}
+
+.small-col img {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.small-col:last-child img {
+    margin-top: 0;
+    float: left;
+    margin-left: 25px;
+}
+
+.small-col:last-child ul {
+    float: right;
+    list-style-type: none;
+    margin-right: 0;
+    padding-right: 25px;
+}
+
+.small-col:not(:last-child) a {
+    float: left;
+    margin-left: 25px;
+    margin-top: 10px;
+}
+
+.small-col a {
+    display: block;
+    color: #72716d;
+    background: url("images/read_more_yellow.png") left center no-repeat;
+    margin-right: 0px;
+    padding-left: 12px;
+    padding-top: 5px;
+}
+
+.small-col a:hover {
     color: #005CA0;
     background: url("images/read_more_blue.png") left center no-repeat;
 }
