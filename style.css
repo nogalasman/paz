@@ -67,3 +67,12 @@ main {
     height: 215px;
     margin: 19px 6px 0px 6px;
 }
+
+.txt-container {
+    width: 246px;
+    height: 95px;
+    background-color: rgba(144, 144, 144, 0.9);
+    margin-top: 253px;
+    border-bottom-right-radius: 25px;
+    margin-right: 6px;
+}
