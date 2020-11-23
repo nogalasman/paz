@@ -11,7 +11,11 @@ body {
 
 header {
     height: 105px;
-    background-color: #909090;
+    /* background-color: #909090; */
+    background: #AAAAAA;
+    background: -webkit-linear-gradient(to top, #AAAAAA 5%, #909090 16%);
+    background: -moz-linear-gradient(to top, #AAAAAA 5%, #909090 16%);
+    background: linear-gradient(to top, #AAAAAA 5%, #909090 16%);
 }
 
 footer {
@@ -97,7 +101,7 @@ main {
 }
 
 .txt-container a:hover {
-    color: #005CA0;
+    color: #005ca0;
     background: url("images/read_more_blue.png") left center no-repeat;
 }
 
@@ -150,6 +154,91 @@ main {
 }
 
 .small-col a:hover {
-    color: #005CA0;
+    color: #005ca0;
     background: url("images/read_more_blue.png") left center no-repeat;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    color: #fff;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+    color: #005ca0;
+}
+
+nav ul li {
+    display: block;
+    list-style-type: none;
+    height: 100%;
+}
+
+nav>ul {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+nav>ul>li>ul {
+    /* background-image: linear-gradient(white, #909090); */
+    background: #909090;
+    background: -webkit-linear-gradient(to top, #909090 79%, #AAAAAA 100%);
+    background: -moz-linear-gradient(to top, #909090 79%, #AAAAAA 100%);
+    background: linear-gradient(to top, #909090 79%, #AAAAAA 100%);
+    position: relative;
+    padding: 1px 5px 5px 5px;
+}
+
+nav ul li ul {
+    display: none;
+    /* position: relative; */
+}
+
+nav ul li:hover ul {
+    display: block;
+    z-index: 10;
+    margin-left: -35px;
+}
+
+nav>ul>li>ul>li>a>h3 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+nav>ul>li>a>h3::before {
+    content: "|";
+    color: #aaaaaa;
+    margin: 0 15px 0 15px;
+}
+
+nav>ul>li>ul>li:not(:last-child) {
+    border-bottom: solid 1px #aaaaaa;
+    margin: 0;
+}
+
+nav ul li a img {
+    margin-top: 16px;
+}
+
+.search-container {
+    height: 50%;
+}
+
+nav {
+    height: 50%;
+}
+
+.logo-link {
+    position: fixed;
+    margin: -23px 350px 0 15px;
 }
