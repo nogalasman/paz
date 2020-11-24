@@ -28,10 +28,14 @@ footer {
 }
 
 main {
+    height: calc(100% - 145px);
+}
+
+.main-content {
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
-    height: calc(100% - 145px);
+    height: 100%;
 }
 
 
@@ -320,4 +324,53 @@ footer>div:not(.contact-footer-menu) ul li:last-child span {
 
 footer>div ul li:not(:first-child):before {
     content: " | ";
+}
+
+
+/* contact page */
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+}
+
+.column {
+    border: solid 1px black;
+    height: 100%;
+    width: 100%;
+}
+
+.contact-link {
+    width: 123px;
+    height: 37px;
+    background: #CCCCCC;
+    background: -webkit-linear-gradient(to top, #CCCCCC 13%, #FFFFFF 93%);
+    background: -moz-linear-gradient(to top, #CCCCCC 13%, #FFFFFF 93%);
+    background: linear-gradient(to top, #CCCCCC 13%, #FFFFFF 93%);
+    float: left;
+    margin-top: 33px;
+    border-top: 1px solid #dedede;
+    position: relative;
+}
+
+.contact-link a {
+    color: #5c5c5c;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    text-decoration: none;
+}
+
+.contact-link a:hover {
+    text-decoration: underline;
+    color: #005ca0
+}
+
+.contact-link span {
+    color: #005CA0;
+    font-size: 2em;
+    position: absolute;
+    right: -7px;
+    top: 3px;
 }
