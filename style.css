@@ -240,6 +240,10 @@ nav ul li a img {
     margin-top: 16px;
 }
 
+nav ul li a img:hover {
+    src: url("images/menu_home_blue.png");
+}
+
 .search-container {
     height: 50%;
 }
@@ -307,10 +311,10 @@ footer>div ul li img {
 footer>div ul li span:hover,
 footer>div ul li:last-child span:hover {
     text-decoration: underline;
-    color: #005ca0;
+    color: #005ca0!important;
 }
 
-footer>div ul li:last-child span {
+footer>div:not(.contact-footer-menu) ul li:last-child span {
     color: red;
 }
 
