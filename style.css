@@ -34,14 +34,11 @@ main {
     height: calc(100% - 145px);
 }
 
+
+/* main page first row */
+
 .big-row {
     height: 385px;
-    display: flex;
-    justify-content: center;
-}
-
-.small-row {
-    height: 234px;
     display: flex;
     justify-content: center;
 }
@@ -105,6 +102,15 @@ main {
     background: url("images/read_more_blue.png") left center no-repeat;
 }
 
+
+/* main page second row */
+
+.small-row {
+    height: 234px;
+    display: flex;
+    justify-content: center;
+}
+
 .small-col {
     width: 291px;
     height: 215px;
@@ -162,6 +168,9 @@ ul {
     margin: 0;
     padding: 0;
 }
+
+
+/* upper main menu */
 
 nav {
     color: #fff;
@@ -240,9 +249,12 @@ nav {
 }
 
 .logo-link {
-    position: fixed;
+    position: absolute;
     margin: -23px 420px 0 15px;
 }
+
+
+/* search box */
 
 .search-box {
     display: flex;
@@ -265,16 +277,43 @@ nav {
 }
 
 
-/* .search-box {
-    /* margin-left: 410px;
-    margin-top: 30px; */
+/* footer menu */
 
+footer>div {
+    overflow: hidden;
+    margin: 12px
+}
 
-/* margin-left: 410px;
-margin-top: 30px;
-float: left;
-border-top-right-radius: 10px;
-border: none;
-height: 17px;
+footer>div ul {
+    list-style: none;
+    padding: 0;
+    margin-left: -4px;
+    text-align: center;
+}
 
-} */
+footer>div ul li {
+    display: inline;
+    white-space: nowrap;
+    color: white;
+    font-size: 1.1em;
+    cursor: pointer;
+}
+
+footer>div ul li img {
+    position: absolute;
+    right: 440px;
+}
+
+footer>div ul li span:hover,
+footer>div ul li:last-child span:hover {
+    text-decoration: underline;
+    color: #005ca0;
+}
+
+footer>div ul li:last-child span {
+    color: red;
+}
+
+footer>div ul li:not(:first-child):before {
+    content: " | ";
+}
