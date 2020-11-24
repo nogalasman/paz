@@ -333,6 +333,8 @@ footer>div ul li:not(:first-child):before {
     display: flex;
     justify-content: center;
     height: 100%;
+    margin-top: 33px;
+    color: #72716D;
 }
 
 .column {
@@ -340,6 +342,13 @@ footer>div ul li:not(:first-child):before {
     height: 100%;
     width: 100%;
 }
+
+.column {
+    padding-right: 22px;
+}
+
+
+/* right column contact link */
 
 .contact-link {
     width: 123px;
@@ -349,7 +358,6 @@ footer>div ul li:not(:first-child):before {
     background: -moz-linear-gradient(to top, #CCCCCC 13%, #FFFFFF 93%);
     background: linear-gradient(to top, #CCCCCC 13%, #FFFFFF 93%);
     float: left;
-    margin-top: 33px;
     border-top: 1px solid #dedede;
     position: relative;
 }
@@ -373,4 +381,120 @@ footer>div ul li:not(:first-child):before {
     position: absolute;
     right: -7px;
     top: 3px;
+}
+
+
+/* middle column */
+
+
+/* contact breadcrumb */
+
+.breadcrumb {
+    list-style: none;
+    padding-inline-start: 0;
+}
+
+.breadcrumb-item {
+    display: inline;
+}
+
+.breadcrumb li+li:before {
+    color: #5C5C5C;
+    content: ">";
+}
+
+.breadcrumb-item a {
+    color: #5C5C5C;
+    text-decoration: none;
+}
+
+.breadcrumb-item:first-child a:hover {
+    text-decoration: underline;
+    color: #005ca0;
+}
+
+form {
+    border-top-right-radius: 25px;
+    border: solid 1px#CCCCCC;
+    border-bottom: none;
+    background: #ECECEC;
+    background: -webkit-linear-gradient(to top, #ECECEC 26%, #FFFFFF 93%);
+    background: -moz-linear-gradient(to top, #ECECEC 26%, #FFFFFF 93%);
+    background: linear-gradient(to top, #ECECEC 26%, #FFFFFF 93%);
+    width: 383px;
+    height: 356px;
+    margin-top: 12px;
+}
+
+h3.contact-title {
+    margin-bottom: 3px;
+}
+
+.column hr {
+    border-top: solid 1px #CCCCCC;
+}
+
+.form-container {
+    padding: 0 15px 15px 15px;
+}
+
+h3.contact-inner-title {
+    color: #005CA0;
+    /* margin-block-start: 0; */
+    margin-block-end: 0;
+}
+
+.form-container p {
+    margin-block-start: 3px;
+    margin-block-end: 0;
+}
+
+p.contact-text {
+    font-weight: bold;
+}
+
+.form-field {
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 50px;
+    margin-left: 50px;
+    position: relative;
+}
+
+.error {
+    color: red;
+    display: none;
+    position: absolute;
+    padding-top: 10px;
+}
+
+.was-submitted input:invalid+.error {
+    display: block;
+}
+
+.form-container button {
+    float: left;
+    margin-left: 50px;
+    margin-top: 5px;
+    border-top-right-radius: 8px;
+    background: #02528A;
+    background: -webkit-linear-gradient(to top, #02528A 2%, #5FBAE1 93%);
+    background: -moz-linear-gradient(to top, #02528A 2%, #5FBAE1 93%);
+    background: linear-gradient(to top, #02528A 2%, #5FBAE1 93%);
+    color: white;
+    border: none;
+    width: 44px;
+    height: 20px;
+    font-size: 1.1em;
+    cursor: pointer;
+}
+
+.form-container button:hover {
+    background: #F48F08;
+    background: -webkit-linear-gradient(to top, #F48F08 10%, #EAE066 92%);
+    background: -moz-linear-gradient(to top, #F48F08 10%, #EAE066 92%);
+    background: linear-gradient(to top, #F48F08 10%, #EAE066 92%);
+    color: #3C3C3C;
+    border: none;
 }
